@@ -1,0 +1,4 @@
+Projects Code Download: https://github.com/techwithtim/5-Python-Projects-For-Beginners
+Fix Pip (Windows): https://www.youtube.com/watch?v=AdUZArA-kZw
+Fix Pip (Mac/Linux): https://www.youtube.com/watch?v=E-WhAS6qzsU&t=4s
+Fernet Cryptography Documentation: https://cryptography.io/en/latest/fernet/
