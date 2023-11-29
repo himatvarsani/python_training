@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Jokes Web Services</title>
+    <script src="/static/js/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Random Jokes</h1>
+    <h2>Would you like you like to hear a joke? </h2>
+    <button class="custom-btn btn-7" onClick="myFunction()"><span>Click Here to tell me a joke</span></button>
+    <p id="joke" class="para_jokes"></p>
+    <br>
+    <button class="custom-btn btn-7" onclick="window.location.href='/jokes'"><span>See All Jokes</span></button>
+    <button class="custom-btn btn-7" onclick="window.location.href='/jokes/add'"><span>Add a joke</span></button>
+    <button class="custom-btn btn-7"><span>Delete a joke</span></button>
+    <button class="custom-btn btn-7"><span>Update a joke</span></button>
+
+<script>
+function myFunction() {
+ 
+  document.getElementById("joke").innerHTML = "<p>{{jokes}}</p>";
+  
+}
+
+</script>
+
+</body>
+</html>
